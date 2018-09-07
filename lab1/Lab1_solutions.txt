@@ -1,0 +1,49 @@
+CSCI3308 - Section 112
+Lab 1
+Authors: Bryce DesBrisay, Brendan Ostrom, Blake Hampton, Lucas Zahorik
+
+STEP 4)
+1.  mkdir cs3308
+2.  mv cs3308 CSCI3308_112
+    cd CSCI3308_112
+3.  mv Lab_Materials.zip ../repos/CSCI3308_112/Lab_Materials.zip
+    unzip Lab_Materials.zip
+4.  ls -a
+5.  ls -lS images
+    fightingRalphie.png is the largest image
+6.  mkdir tinyData
+    cp images/majesticRalphie.png tinyData
+    cp textFiles/aliceinwonderland.txt tinyData
+    128 bytes total (ls -l)
+7.  zip -r tinyData.zip tinyData (172091 bytes)
+8.  tar -cvf tinydata.tar tinyData (283648 bytes)
+9.  rm -rf tinyData tinyData.zip
+10. tar -xvf tinyData.tar 
+    -x to extract
+    -v to list extracted files
+    -f to specify files
+11. unzip -l little1.zip
+    unzip -l little2.zip
+    little2.zip has a directory inside of it
+12. find . -name "target.txt"
+    path is "./emptyFolders/13/target.txt"
+    root path is "~/home/repos/csci3308/lab1/CSCI3308_112/LabMaterials/emptyFolders/13/target.txt"
+13. head -n 5 textFiles/dracula.txt >> textFiles/MyShortStory.txt
+    tail -n 5 textFiles/heartofdarkness.txt >> textFiles/MyShortStory.txt
+
+STEP 5)
+1.  sort -t: -k 1 -g password_demo.txt
+2.  sort -t: -k 4 -g password_demo.txt
+3.  grep "system" password_demo.txt
+4.  wc -w password_demo.txt
+5.  sort -t: -k 3 -u password_demo.txt
+6.  sort -t: -k 3 -u password_demo.txt > tmp
+7.  SCRIPT: getUniqueGID.sh
+      #!/bin/bash
+      sort -t: -k 3 -u password_demo.txt
+
+    TO RUN:
+      ./getUniqueGID.sh
+
+    PERMISSIONS: 
+      chmod +x getUniqueGID.sh
