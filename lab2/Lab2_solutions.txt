@@ -1,0 +1,45 @@
+CSCI 3308 - Lab 2 Solutions
+Authors: Bryce DesBrisay
+TA: Michael S
+
+STEP 1:
+1.  diff scene1_v1.txt scene1_v2.txt
+2.  '<' and '>' at the beginning of the lines tells you which file the line is from
+3.  it -c option provides context to the different lines and prints out a few lines around the actual difference
+
+STEP 2:
+1.  grep "pigeon" scene1_v1.txt
+2.  diff scene1_v1.txt scene1_v2.txt | grep "pigeon"
+
+STEP 3: 
+1.  cut -d : -f 1 -s scene1_v1.txt
+2.  diff scene1_v1.txt scene1_v2.txt | cut -d : -f 1 -s
+
+STEP 4:
+1.  uniq -d scene1_v1.txt
+2.  diff scene1_v1.txt scene1_v2.txt | cut -d : -f 1 -s | sort | grep ">" | uniq -c
+
+STEP 5:
+A1. sed 's/[A-Za-z]//g' cryptic.txt
+A2. sed 's/[0-9]/_/g' cryptic.txt
+B.  script:
+      # WITH PIPES
+      #!/bin/bash
+
+      sed 's/4/a/g' cryptic.txt | sed 's/5/s/g' | sed 's/3/e/g' | sed 's/0/o/g' | sed 's/7/t/g' | sed 's/1/i/g'
+
+      # WITHOUT PIPES
+
+      sed 's/3/e/g; s/0/o/g; s/5/s/g; s/4/a/g; s/5/s/g; s/7/t/g; s/1/i/g;' cryptic.txt
+
+    run: 
+      chmod +x sed-numbers.sh
+      ./sed-numbers.sh
+
+STEP 6:
+1.  grep "^\d\{3\}-\d\{3\}-\d\{4\}$" regex_practice_data.txt | wc -l
+2.  grep "^303-4441-\d\{4\}$" regex_practice_data.txt | wc -l
+
+STEP 7:
+1.  awk 'NR>1 {print $1 " Pizza Average: " $6/$2}' pizzaOrders.txt
+2.  awk '{ total += $2 } END { cheese += $5 } END { print 100 * (cheese / total) }' pizzaOrders.txt
