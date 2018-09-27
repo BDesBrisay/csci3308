@@ -1,0 +1,62 @@
+CSCI 3308 - Lab 4
+Author: Bryce DesBrisay
+
+1.  Github Name: BDesBrisay
+2.  Clicked new repo, typed in its name, and created it
+3.  git clone git@github.com:BDesBrisay/Recitation-3308.git
+4.  echo "Bryce DesBrisay\nCSCI 3308 - Recitation 4" >> README.md
+    git add -A
+    git commit -m "Added readme file"
+5.  git add Sample1.txt Sample2.txt
+    git commit -m "Added sample files"
+6.  git tag v0.0.1
+7.  git push --tags
+8.  git branch new-feature
+    git checkout new-feature
+9.  git add Sample3.txt Sample4.txt
+    git commit -m "Added more sample files"
+10. git checkout master
+11. vi Sample1.txt
+    :wq
+    git add Sample1.txt
+    git commit -m "Edited Sample1.txt"
+12. git merge new-feature
+    Merge conflicts resolved themselves:
+    "
+    Merge made by the 'recursive' strategy.
+    Sample3.txt | 21 +++++++++++++++++++++
+    Sample4.txt | 21 +++++++++++++++++++++
+    2 files changed, 42 insertions(+)
+    create mode 100644 Sample3.txt
+    create mode 100644 Sample4.txt
+    "
+13. git checkout new-feature
+14. git push --set-upstream origin new-feature
+    git checkout master
+    git push
+15. Done
+16. Add contributor on Github
+17. git clone git@github.com:dskrenta/Recitation-3308.git
+18. vi README.md
+    "Partner: Bryce DesBrisay"
+19. git add -A
+    git commit -m "Changed README"
+20. git push
+21. cd ../Recitation-3308
+22. git checkout master
+23. vi README.md
+    "This line might cause merge conflicts"
+24. git add -A
+    git commit -m "Changed README"
+25. Done
+26. git pull
+27. delete line "This line might cause merge conflict"
+28. git commit -m "Committing merge"
+29. "
+    <<<<<<< HEAD
+    Partner: David Skrenta
+    =======
+    This line might cause merge conflicts
+    >>>>>>> refs/origin/master
+    "
+30. git push
