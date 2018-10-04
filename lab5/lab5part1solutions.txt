@@ -1,0 +1,20 @@
+CSCI 3308 - Lab 5 Part 1
+Author: Bryce DesBrisay
+
+1.  background-color: 'red'
+    #div1 {
+      background-color: 'red'
+    }
+2.  The margin changes the space around the div
+    The padding changes the space inside the div
+3.  Both the padding and margin make the text float outside of the parent div
+4.  overflow: scroll makes it so anyhting that woudl overflow outside of the div is still accessable through scrolling
+    overflow: hidden makes it so that everything outside of the div is cut off and hidden
+5.  The order is 1, 2, 3. If they all have float: right instead, they are in the order of 3, 2, 1
+6.  Adding a float: left overrides the float right and aligns them all to the left
+    clear: right clears the float: right and returns the divs to the left
+7.  div1 has float: left
+    div2 has float: left
+    div3 has clear: left
+8.  The divs now touch the edges of the page.
+    there is a default margin of 8px for the body
