@@ -1,0 +1,108 @@
+<!-- BRYCE DESBRISAY -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>My Form Page</title>
+
+    <style>
+      body {
+        padding: 50px 0;
+      }
+      label {
+        font-weight: bold;
+      }
+      .form-check > label {
+        font-weight: normal;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- insert your code here -->
+    <div class="container">
+      <h1>This is a sample form.</h1>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="nickname">NickName</label>
+          <input type="text" class="form-control" id="nickname" placeholder="Enter NickName">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <br>
+        <label>Favorite Activities</label>
+        <div class="row" style="padding-left: 15px">
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label class="form-check-label" for="check1">Watching The Office</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check2">
+            <label class="form-check-label" for="check2">Eating Beets</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check3">
+            <label class="form-check-label" for="check3">Watching Friends</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check4">
+            <label class="form-check-label" for="check4">Watching NBA</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check5">
+            <label class="form-check-label" for="check5">Exploring the Universe with Rick</label>
+          </div>
+        </div>
+        <label>Gender</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Female
+          </label>
+        </div>
+        <br>
+        <label>Friends</label>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Click here to view friends list
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Sam Smith</a>
+            <a class="dropdown-item" href="#">Chandler Bing</a>
+            <a class="dropdown-item" href="#">Dwight Schrute</a>
+            <a class="dropdown-item" href="#">Morty Smith</a>
+          </div>
+        </div>
+        <br>
+        <label>Additional Information</label>
+        <p>About me</p>
+        <textarea class="form-control"></textarea>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

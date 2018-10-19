@@ -1,0 +1,8 @@
+CSCI 3308 - Lab 7
+Author: Bryce DesBrisay
+
+Q: What are the things needed for Bootstrap to be loaded?
+A: Bootstrap needs its minified css and js files in order to load
+
+Q: How does Bootstrap’s Grid system work?
+A: It has a few predetermined class names with consistent styles that all mesh together really nicely. There is a container, row, and column classes that can be modified by posterior tags in the class name

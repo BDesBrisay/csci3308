@@ -1,0 +1,35 @@
+/* BRYCE DESBRISAY */
+
+body {
+  color: white;
+}
+.first {
+  background-color: red;
+  text-align: center;
+  padding: 10px 0;
+}
+.second {
+  background-color: orange;
+  text-align: center;
+  padding: 10px 0;
+}
+.third {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+.fourth {
+  background-color: green;
+  text-align: center;
+  padding: 10px 0;
+}
+.fifth {
+  background-color: blue;
+  text-align: center;
+  padding: 10px 0;
+}
+.sixth {
+  background-color: purple;
+  text-align: center;
+  padding: 10px 0;
+}
