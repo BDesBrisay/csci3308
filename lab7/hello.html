@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Hello</title>
+    <script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+    <script>
+      $(document).ready(() => {
+        const url = 'https://api.forecast.io/forecast/7b1618dd2d9aa7c62c14d9324df356b3/40.014984,-105.270546';
+        $.ajax({ url, dataType: 'jsonp' }).then((data) => {
+          console.log(data)
+          $('#results').text(data.currently.temperature)
+          $('#temp').text(data.currently.temperature)
+          $('#appTemp').text(data.currently.apparentTemperature)
+          $('#precipType').text(data.currently.summary)
+        })
+      })
+    </script>
+    <style>
+      td, th {
+        border: 1px solid #ddd;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello,world.</p>
+    <p id="results">Original</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Stat</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Temperature</td>
+          <td id="temp">Who knows?</td>
+        </tr>
+        <tr>
+          <td>Apparent Temperature</td>
+          <td id="appTemp">Who knows?</td>
+        </tr>
+        <tr>
+          <td>Precipitation Type</td>
+          <td id="precipType">Who knows?</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
