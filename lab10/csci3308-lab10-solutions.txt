@@ -1,0 +1,5 @@
+CSCI 3008 - lab 10 solutions
+By Bryce DesBrisay
+
+My Heroku App:
+https://csci3308-lab10-desbrisay-bryce.herokuapp.com/
